@@ -1,0 +1,66 @@
+<body>
+  <main>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-6 col-sm-offset-1 lc">
+                  <h1><%= @data.last.title %></h1>
+                  <div class="row">
+                      <div class="col-sm-12 postertag">
+                          <%= image_tag @data.last.author, class: 'img-circle', id:'postersmall'%>
+                          <h5> <%= @data.last.author %> <small>on <a href="">
+                            <%= @data.last.created_at %></a></small></h5>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <p> <%= simple_format(@data.last.body) %></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12 glyph">
+                          <div class="btn-group" role="group" aria-label="...">
+                              <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+                              <button type="button" class="btn btn-default btn-xs">Read Comments</button>
+                          </div>
+                          <div class="btn-group" role="group" aria-label="...">
+                              <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button>
+                              <button type="button" class="btn btn-default btn-xs">Read Later</button>
+                          </div>
+                          <div class="btn-group" role="group" aria-label="...">
+                              <button type="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-share" aria-hidden="true"></span></button>
+                              <button type="button" class="btn btn-primary btn-xs">Share This Post</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-4 rc">
+                  <%= image_tag @data.last.author, class: 'img-circle center-block', id:'poster'%>
+                  <h4 class="text-center"><%= @data.last.author.upcase %></h4>
+                  <p class="text-center"><small>
+          <a href="http://www.twitter.com">twitter</a> |
+          <a href="http://www.facebook.com">facebook</a> |
+          <a href="http://www.instagram.com">instagram</a>
+        </small></p>
+                  <div class="row ad">
+                      <div class="col-sm-12 ad">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <p class="text-right"><small><a href="">About This Ad</a></small></p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12">
+                          <h4>Sidebar Section Heading</h4>
+                          <h5><small>Bacon ipsum dolor amet sausage shank dolore, occaecat ea ribeye commodo short loin tail proident t-bone aliqua ipsum ham hock voluptate. Flank leberkas sint tri-tip turducken veniam, aliquip laborum strip steak sunt est ut sed. Dolor culpa prosciutto adipisicing quis, irure brisket. Quis excepteur strip steak, reprehenderit eu ball tip picanha.</small></h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+</body>
+
+</html>

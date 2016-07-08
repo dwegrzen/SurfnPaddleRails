@@ -1,0 +1,78 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.footerbox1 {
+    transition: all 0.5 ease;
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
+    background: image-url("1")no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.footerbox1:hover {
+    background: image-url("1")no-repeat;
+    background-size: cover;
+}
+.footerbox1:hover a {
+    color: white;
+}
+
+.footerbox2 {
+    transition: all 0.5 ease;
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
+    background: image-url("2")no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.footerbox2:hover {
+    background: image-url("2")no-repeat;
+    background-size: cover;
+}
+.footerbox2:hover a {
+    color: white;
+}
+
+.footerbox3 {
+    transition: all 0.5 ease;
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
+    background: image-url("3")no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.footerbox3:hover {
+    background: image-url("3")no-repeat;
+    background-size: cover;
+}
+.footerbox3:hover a {
+    color: white;
+}
+
+.footerbox4 {
+    transition: all 0.5 ease;
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
+    background: image-url("4")no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.footerbox4:hover {
+    background: image-url("4")no-repeat;
+    background-size: cover;
+}
+.footerbox4:hover a {
+    color: white;
+}
+
+.footerbox5 {
+    transition: all 0.5 ease;
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
+    background: image-url("5")no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.footerbox5:hover {
+    background: image-url("5")no-repeat;
+    background-size: cover;
+}
+.footerbox5:hover a {
+    color: white;
+}

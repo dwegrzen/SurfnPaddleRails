@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SurfnPaddleRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="oldmain.css" />
+</head>
+<body>
+  <header>
+      <div class="container">
+          <div class="row header1">
+              <div class="col-xs-5 col-xs-offset-1 navleft">
+                  <%= image_tag "surflogo", id: 'logo' %>
+                  <h5><a href= <%= root_path %>>SURF AND PADDLE CO. BLOG</a></h5>
+              </div>
+              <div class="col-xs-5 navright">
+                  <h5><a href="">ABOUT</a></h5>
+                  <h5><a href="">SEARCH</a></h5><%= image_tag "icon-search", id: 'searchicon' %>
+              </div>
+          </div>
+          <div class="row header2">
+              <div class="col-sm-12 text-center">
+                  <h1>SURF & PADDLE CO.</h1>
+              </div>
+          </div>
+          <div class="row header3">
+              <div class="col-sm-12 text-center">
+                  <h6>An Ironyard Academy Project Est. Summer 2016</h6>
+              </div>
+          </div>
+      </div>
+  </header>
+
+<%= yield %>
+
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <h1 class="text-center">THESE ARE THE BEST POSTS</h1>
+              </div>
+          </div>
+          <div class="row">
+              <% @footerposts.each do |x| %>
+              <div class="col-md-3 col-sm-6 fp footerbox<%=x.id%>">
+                  <h4><%= link_to "#{x.title}",
+                    blog_path(postid: x.id)%></h4>
+              </div>
+              <%end%>
+          </div>
+          <div class="row">
+              <div class="col-sm-12 fnav">
+                  <div class="col-sm-6 leftfooter">
+                      <%= image_tag "ironyardlogo", id: 'TIY' %>
+                      <h6><small>The Ironyard Copyright 2016, All Rights Reserved</small></h6>
+                  </div>
+                  <div class="col-sm-6 rightfooter">
+                      <ul class="list-unstyled list-inline">
+                          <li><a href=""><h6><small>Nav Item 1</small></h6></a></li>
+                          <li><a href=""><h6><small>Nav Item 2</small></h6></a></li>
+                          <li><a href=""><h6><small>Nav Item 3</small></h6></a></li>
+                          <li><a href=""><h6><small>Nav Item 4</small></h6></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
