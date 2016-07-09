@@ -6,17 +6,43 @@ header .container {
     background-size: cover;
     height: 30vw;
 }
+header .blog1 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog2 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(2.png);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog3 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(3.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog4 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(4.jpeg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog5 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(5.jpg);
+    background-size: cover;
+    height: 30vw;
+}
 .navleft {
-    /*position:fixed;*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .navright {
-    /*position:fixed;*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.glyphicon {
+  top: 0px
 }
 #logo {
     display: inline;
@@ -28,13 +54,13 @@ header .container {
     height: 15px;
 }
 header h5 {
-    color: #083451;
+    color: #17a3ff;
     display: inline;
     margin-left: 10px;
 }
 header a {
     text-decoration: none;
-    color: #083451;
+    color: #17a3ff;
 }
 header h1 {
     color: white;
@@ -43,7 +69,7 @@ header h1 {
     font-family: Tahoma;
 }
 header h6 {
-    color: #083451;
+    color: #17a3ff;
     margin-top: 0;
 }
 main h5 {
@@ -53,11 +79,11 @@ main h5 {
     margin-bottom: 20px;
 }
 .lc h1 {
-    color: #083451;
+    color: #17a3ff;
     font-weight: normal;
 }
 .lc h5 {
-    color: #2369A6;
+    color: #17a3ff;
 }
 .rc {
     padding-left: 30px;
@@ -65,7 +91,7 @@ main h5 {
 }
 .rc h4 {
     margin-bottom: 0;
-    color: #2369A6;
+    color: #17a3ff;
 }
 .rc p {
     margin-bottom: 30px margin-left: 10px color: #BDC2C8
@@ -75,29 +101,24 @@ main h5 {
 }
 #postersmall {
     display: inline;
-    width: 25px;
+    width: 30px;
 }
-#blogmainpic{
-  height: 300px;
+#aboutpic {
+    width: 100px;
+}
+#blogmainpic {
+    height: 300px;
 }
 #poster {
-    width: 75px;
+    width: 100px;
     margin-top: 30px;
 }
 #adpic {
-    object-fit: cover;
-    height: 30vw;
+    max-width: 100%;
+    height: auto;
 }
 .ad {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(https://unsplash.it/280/300?random);
-    background-size: cover;
-    height: 22vw;
-    margin: 0px;
-}
-.ad:hover{
-    background: url(https://unsplash.it/280/300?random);
-    background-size: cover;
-    height: 22vw;
+    object-fit: cover;
     margin: 0px;
 }
 .container-fluid {
@@ -109,12 +130,14 @@ main h5 {
     height: 275px;
     object-fit: cover;
 }
-.fp {
+.foot {
     display: flex;
     flex-direction: column-reverse;
     padding: 0;
     height: 250px;
+    background-size: cover;
 }
+
 /*.footerbox1 {
     transition: all 0.5 ease;
     background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
@@ -129,39 +152,7 @@ main h5 {
 .footerbox1:hover a {
     color: white;
 }*/
-.LC {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(https://unsplash.it/400/300?random);
-    background-size: cover;
-}
-.LC:hover {
-    background: url(https://unsplash.it/400/300?random);
-    background-size: cover;
-}
-.LC:hover h4 {
-    color: white;
-}
-.RC {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(https://unsplash.it/280/325?random);
-    background-size: cover;
-}
-.RC:hover {
-    background: url(https://unsplash.it/280/325?random);
-    background-size: cover;
-}
-.RC:hover h4 {
-    color: white;
-}
-.RR {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(https://unsplash.it/250/301?random);
-    background-size: cover;
-}
-.RR:hover {
-    background: url(https://unsplash.it/250/301?random);
-    background-size: cover;
-}
-.RR:hover h4 {
-    color: white;
-}
+
 .fp h3 {
     font-size: 20px;
 }
@@ -169,7 +160,7 @@ main h5 {
     background-color: #083451;
     display: flex;
     align-items: center;
-    height:75px
+    height: 75px
 }
 #TIY {
     display: inline;
@@ -199,10 +190,10 @@ footer h6 {
     font-size: 14px;
 }
 footer h1 {
-    color: #083451;
+    color: #17a3ff;
 }
 footer h4 {
-    color: #117cc2;
+    color: #17a3ff;
     font-size: 24px;
     padding-left: 10px;
     font-weight: bold;

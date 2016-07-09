@@ -3,17 +3,17 @@
       <div class="container-fluid">
           <div class="row">
               <div class="col-sm-6 col-sm-offset-1 lc">
-                  <h1><%= @data.last.title %></h1>
+                  <h1><%= @recent.title %></h1>
                   <div class="row">
                       <div class="col-sm-12 postertag">
-                          <%= image_tag @data.last.author, class: 'img-circle', id:'postersmall'%>
-                          <h5> <%= @data.last.author %> <small>on <a href="">
-                            <%= @data.last.created_at %></a></small></h5>
+                          <%= image_tag @recent.author, class: 'img-circle', id:'postersmall'%>
+                          <h5> <%= @recent.author %> <small>on <a href="">
+                            <%= @recent.created_at %></a></small></h5>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
-                          <p> <%= simple_format(@data.last.body) %></p>
+                          <p> <%= simple_format(@recent.body) %></p>
                       </div>
                   </div>
                   <div class="row">
@@ -34,8 +34,8 @@
                   </div>
               </div>
               <div class="col-sm-4 rc">
-                  <%= image_tag @data.last.author, class: 'img-circle center-block', id:'poster'%>
-                  <h4 class="text-center"><%= @data.last.author.upcase %></h4>
+                  <%= image_tag @recent.author, class: 'img-circle center-block', id:'poster'%>
+                  <h4 class="text-center"><%= @recent.author.upcase %></h4>
                   <p class="text-center"><small>
           <a href="http://www.twitter.com">twitter</a> |
           <a href="http://www.facebook.com">facebook</a> |
@@ -43,6 +43,7 @@
         </small></p>
                   <div class="row ad">
                       <div class="col-sm-12 ad">
+                        <%= image_tag "ad"+rand(6).to_s, class: 'img-responsive', id:'adpic'%>
                       </div>
                   </div>
                   <div class="row">

@@ -5,7 +5,9 @@ attr_accessor :data
 
   def index
     @data = Post.all
-    @footerposts = @data.sort_by{|x| x.id}.select{|post| post.id != @data.last.id}
+    @recent = @data.sort_by{|x| x.created_at}.last
+    @footerposts = @data.sort_by{|x| x.created_at}.reverse.select{|post| post.id != @recent.id}
+    @title = "Surf-N-Paddle Blog"
   end
 
 
@@ -13,7 +15,10 @@ attr_accessor :data
     @data = Post.all
     @int = params[:postid].to_i
     @selected = Post.find(@int)
-    @footerposts = @data.select{|post| post.id != params[:postid].to_i}
+    @footerposts = @data.select{|post| post.id != params[:postid].to_i}.sort_by{|x| x.created_at}.reverse
+    @title = @selected.title
+    @header = @selected.id
+
   end
 
 end
