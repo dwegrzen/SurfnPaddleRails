@@ -8,6 +8,7 @@ attr_accessor :data
     @recent = @data.sort_by{|x| x.created_at}.last
     @footerposts = @data.sort_by{|x| x.created_at}.reverse.select{|post| post.id != @recent.id}
     @title = "Surf-N-Paddle Blog"
+
   end
 
 
@@ -20,5 +21,6 @@ attr_accessor :data
     @header = @selected.id
 
   end
+
 
 end

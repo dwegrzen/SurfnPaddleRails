@@ -1,48 +1,20 @@
 * {
     font-family: Tahoma;
 }
-header .container {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(header.jpg);
-    background-size: cover;
-    height: 30vw;
-}
-header .blog1 {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
-    background-size: cover;
-    height: 30vw;
-}
-header .blog2 {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(2.png);
-    background-size: cover;
-    height: 30vw;
-}
-header .blog3 {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(3.jpg);
-    background-size: cover;
-    height: 30vw;
-}
-header .blog4 {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(4.jpeg);
-    background-size: cover;
-    height: 30vw;
-}
-header .blog5 {
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(5.jpg);
-    background-size: cover;
-    height: 30vw;
-}
 .navleft {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 8px;
 }
 .navright {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.glyphicon {
-  top: 0px
+.glyphsearch {
+  top: 0px;
+  background-color: #5080A4;
 }
 #logo {
     display: inline;
@@ -56,7 +28,6 @@ header .blog5 {
 header h5 {
     color: #17a3ff;
     display: inline;
-    margin-left: 10px;
 }
 header a {
     text-decoration: none;
@@ -66,7 +37,6 @@ header h1 {
     color: white;
     font-size: 6vw;
     margin-top: 10vw;
-    font-family: Tahoma;
 }
 header h6 {
     color: #17a3ff;
@@ -92,9 +62,6 @@ main h5 {
 .rc h4 {
     margin-bottom: 0;
     color: #17a3ff;
-}
-.rc p {
-    margin-bottom: 30px margin-left: 10px color: #BDC2C8
 }
 .rc a {
     color: none;
@@ -138,21 +105,6 @@ main h5 {
     background-size: cover;
 }
 
-/*.footerbox1 {
-    transition: all 0.5 ease;
-    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5));
-    background: image-url("1")no-repeat;
-    background-size: cover;
-    height: 250px;
-}
-.footerbox1:hover {
-    background: image-url("1")no-repeat;
-    background-size: cover;
-}
-.footerbox1:hover a {
-    color: white;
-}*/
-
 .fp h3 {
     font-size: 20px;
 }
@@ -160,7 +112,7 @@ main h5 {
     background-color: #083451;
     display: flex;
     align-items: center;
-    height: 75px
+    height: 75px;
 }
 #TIY {
     display: inline;
@@ -183,7 +135,7 @@ main h5 {
     border-left: #777777 solid 1px;
 }
 li:first-child {
-    border-left: 0
+    border-left: 0;
 }
 footer h6 {
     display: inline;

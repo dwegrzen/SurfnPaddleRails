@@ -8,12 +8,12 @@
                       <div class="col-sm-12 postertag">
                           <%= image_tag @selected.author, class: 'img-circle', id:'postersmall'%>
                           <h5> <%= @selected.author %> <small>on <a href="">
-                            <%= @selected.created_at %></a></small></h5>
+                            <%= @selected.created_at.strftime("%A, %d %b %Y %l:%M %p") %></a></small></h5>
                       </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-12">
-                      <%= image_tag @selected.id.to_s, class: 'img-responsive', id:'blogmainpic'%>
+                      <%= image_tag @selected.id.to_s, class: 'img-responsive img-rounded', id:'blogmainpic'%>
                     </div>
                       <div class="col-sm-12">
                           <p> <%= simple_format(@selected.body) %></p>

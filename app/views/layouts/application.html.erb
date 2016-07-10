@@ -17,11 +17,11 @@
               </div>
               <div class="col-xs-5 navright">
                   <h5><a href=<%= about_path %>>ABOUT</a></h5>
-                  <form class="navbar-form navbar-left" role="search">
+                  <form action="/search/" class="navbar-form navbar-right" method="get" role="search">
                     <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Search">
+                      <input type="text" name="search" class="form-control" placeholder="Search">
                       <span class="input-group-btn">
-                      <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+                      <button class="btn btn-default glyphicon glyphicon-search glyphsearch" type="button"></button>
                       </span>
                     </div>
                   </form>
@@ -50,10 +50,9 @@
           </div>
           <div class="row">
               <% @footerposts.each do |x| %>
-              <div class="col-md-3 col-sm-6 foot footerbox<%=x.id%>">
-                  <h4><%= link_to "#{x.title}",
-                    blog_path(postid: x.id)%></h4>
-              </div>
+              <a href= <%=blog_path(postid: x.id)%> ><div class="col-md-3 col-sm-6 foot footerbox<%=x.id%>">
+                <h4><%= x.title %><h4>
+              </div></a>
               <%end%>
           </div>
           <div class="row">

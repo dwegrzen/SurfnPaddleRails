@@ -8,7 +8,7 @@
                       <div class="col-sm-12 postertag">
                           <%= image_tag @recent.author, class: 'img-circle', id:'postersmall'%>
                           <h5> <%= @recent.author %> <small>on <a href="">
-                            <%= @recent.created_at %></a></small></h5>
+                            <%= @recent.created_at.strftime("%A, %d %b %Y %l:%M %p") %></a></small></h5>
                       </div>
                   </div>
                   <div class="row">

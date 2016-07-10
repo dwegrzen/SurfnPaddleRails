@@ -1,6 +1,39 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.result {
+  border-bottom: 2px solid #E9E9E9;
+}
+header .container {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(header.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog1 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog2 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(2.png);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog3 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(3.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog4 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(4.jpeg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog5 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(5.jpg);
+    background-size: cover;
+    height: 30vw;
+}
 
 .footerbox1 {
     background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
@@ -9,9 +42,8 @@
     background: image-url("1")no-repeat;
     background-size: cover;
 }
-.footerbox1:hover a {
+.footerbox1:hover h4 {
     color: white;
-    text-decoration: none;
 }
 
 .footerbox2 {
@@ -21,9 +53,8 @@
     background: image-url("2")no-repeat;
     background-size: cover;
 }
-.footerbox2:hover a {
+.footerbox2:hover h4 {
     color: white;
-    text-decoration: none;
 }
 
 .footerbox3 {
@@ -33,9 +64,8 @@
     background: image-url("3")no-repeat;
     background-size: cover;
 }
-.footerbox3:hover a {
+.footerbox3:hover h4 {
     color: white;
-    text-decoration: none;
 }
 
 .footerbox4 {
@@ -45,9 +75,8 @@
     background: image-url("4")no-repeat;
     background-size: cover;
 }
-.footerbox4:hover a {
+.footerbox4:hover h4 {
     color: white;
-    text-decoration: none;
 }
 
 .footerbox5 {
@@ -57,7 +86,6 @@
     background: image-url("5")no-repeat;
     background-size: cover;
 }
-.footerbox5:hover a {
+.footerbox5:hover h4 {
     color: white;
-    text-decoration: none;
 }
