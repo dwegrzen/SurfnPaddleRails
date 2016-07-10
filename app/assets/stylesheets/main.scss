@@ -1,0 +1,91 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.result {
+  border-bottom: 2px solid #E9E9E9;
+}
+header .container {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(header.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog1 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog2 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(2.png);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog3 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(3.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog4 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(4.jpeg);
+    background-size: cover;
+    height: 30vw;
+}
+header .blog5 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(5.jpg);
+    background-size: cover;
+    height: 30vw;
+}
+
+.footerbox1 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
+}
+.footerbox1:hover {
+    background: image-url("1")no-repeat;
+    background-size: cover;
+}
+.footerbox1:hover h4 {
+    color: white;
+}
+
+.footerbox2 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)),url(2.png);
+}
+.footerbox2:hover {
+    background: image-url("2")no-repeat;
+    background-size: cover;
+}
+.footerbox2:hover h4 {
+    color: white;
+}
+
+.footerbox3 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)),url(3.jpg);
+}
+.footerbox3:hover {
+    background: image-url("3")no-repeat;
+    background-size: cover;
+}
+.footerbox3:hover h4 {
+    color: white;
+}
+
+.footerbox4 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)),url(4.jpg);
+}
+.footerbox4:hover {
+    background: image-url("4")no-repeat;
+    background-size: cover;
+}
+.footerbox4:hover h4 {
+    color: white;
+}
+
+.footerbox5 {
+    background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)),url(5.jpg);
+}
+.footerbox5:hover {
+    background: image-url("5")no-repeat;
+    background-size: cover;
+}
+.footerbox5:hover h4 {
+    color: white;
+}
