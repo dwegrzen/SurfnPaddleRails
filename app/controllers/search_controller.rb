@@ -5,7 +5,7 @@ class SearchController < ApplicationController
     @searchparam = params[:search].downcase
     @title = "Search Results:"
     @data = Post.all
-    @footerposts = @data.sort_by{|x| x.created_at}.reverse.shift(4)
+    @footerposts = Post.order(created_at: :desc).limit(4)
 
     @searchresult =[]
     @searchresult += @data.select{|x| x.title.downcase.include?(@searchparam)}

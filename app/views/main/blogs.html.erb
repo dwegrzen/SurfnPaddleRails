@@ -6,8 +6,8 @@
                   <h1><%= @selected.title %></h1>
                   <div class="row">
                       <div class="col-sm-12 postertag">
-                          <%= image_tag @selected.author, class: 'img-circle', id:'postersmall'%>
-                          <h5> <%= @selected.author %> <small>on <a href="">
+                          <%= image_tag @selected.author.name, class: 'img-circle', id:'postersmall'%>
+                          <h5> <%= @selected.author.name %> <small>on <a href="">
                             <%= @selected.created_at.strftime("%A, %d %b %Y %l:%M %p") %></a></small></h5>
                       </div>
                   </div>
@@ -37,8 +37,8 @@
                   </div>
               </div>
               <div class="col-sm-4 rc">
-                  <%= image_tag @selected.author, class: 'img-circle center-block', id:'poster'%>
-                  <h4 class="text-center"><%= @selected.author.upcase %></h4>
+                  <%= image_tag @selected.author.name, class: 'img-circle center-block', id:'poster'%>
+                  <h4 class="text-center"><%= @selected.author.name.upcase %></h4>
                   <p class="text-center"><small>
           <a href="http://www.twitter.com">twitter</a> |
           <a href="http://www.facebook.com">facebook</a> |

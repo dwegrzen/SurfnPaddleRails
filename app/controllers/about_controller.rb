@@ -2,8 +2,7 @@ class AboutController < ApplicationController
 
   def index
     @title = "About Surf-N-Paddle"
-    @data = Post.all
-    @footerposts = @data.sort_by{|x| x.created_at}.reverse.shift(4)    
+    @footerposts = Post.order(created_at: :desc).limit(4)  
   end
 
 
