@@ -6,7 +6,7 @@
             <% @searchresult.each do |x| %>
             <div class="col-sm-8 col-sm-offset-1 result">
               <h4><%= link_to "#{x.title}", blog_path(postid: x.id) %></h4>
-              <h4><small>written by:<%= x.author %></small></h4>
+              <h4><small>written by:<%= x.author.name %></small></h4>
               <p><%=simple_format truncate(x.body, length: 250) %>
               <%= link_to "Link to post", blog_path(postid: x.id)%></p>
             </div>
