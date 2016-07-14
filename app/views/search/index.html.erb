@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-1 search">
+            <h4>Search results for term:<br>"<%= params[:search]%>"<br></h4>
+        </div>
+            <% @searchresult.each do |x| %>
+            <div class="col-sm-8 col-sm-offset-1 result">
+              <h4><%= link_to "#{x.title}", blog_path(x.id) %></h4>
+              <h4><small>written by:<%= x.author.name %></small></h4>
+              <p><%=simple_format truncate(x.body, length: 250) %>
+              <%= link_to "Link to post", blog_path(x.id)%></p>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>
