@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   belongs_to :author
 
-  validates :body, presence: true
+  validates :title, presence: true, length: {minimum: 5}
+  validates :body, presence: true, length: {minimum: 10}
 end

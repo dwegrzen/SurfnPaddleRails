@@ -34,7 +34,18 @@ header .blog5 {
     background-size: cover;
     height: 30vw;
 }
+.footerbox {
+    opacity: 0.5;
+    background-size: cover;
+}
+.footerbox:hover {
+    background-size: cover;
+    opacity: 1.0;
 
+}
+.footerbox:hover h4 {
+    color: white;
+}
 .footerbox1 {
     background: linear-gradient(rgba(0, 89, 147, 0.5), rgba(0, 89, 147, 0.5)), url(1.jpg);
 }

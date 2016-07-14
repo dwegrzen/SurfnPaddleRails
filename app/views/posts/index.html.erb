@@ -3,24 +3,23 @@
       <div class="container-fluid">
           <div class="row">
               <div class="col-sm-6 col-sm-offset-1 lc">
-                  <h1><%= @recent.title %></h1>
+                  <h1><%= @post.title %></h1>
                   <div class="row">
                       <div class="col-sm-12 postertag">
-                          <%= image_tag @recent.author.name, class: 'img-circle', id:'postersmall'%>
-                          <h5> <%= @recent.author.name %> <small>on <a href="">
-                            <%= @recent.created_at.strftime("%A, %d %b %Y %l:%M %p") %></a></small></h5>
+                          <%= image_tag @post.author.name, class: 'img-circle', id:'postersmall'%>
+                          <h5> <%= @post.author.name %> <small>on <a href="">
+                            <%= @post.created_at.strftime("%A, %d %b %Y %l:%M %p") %></a></small></h5>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
-                          <p> <%= simple_format(@recent.body) %></p>
+                          <p> <%= simple_format(@post.body) %></p>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12 glyph">
-                          <div class="btn-group" role="group" aria-label="...">
-                              <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
-                              <button type="button" class="btn btn-default btn-xs">Read Comments</button>
+                          <div class="btn-group">
+                          <%= link_to "Read Post",post_path(@post), class: 'btn btn-default btn-xs'%>
                           </div>
                           <div class="btn-group" role="group" aria-label="...">
                               <button type="button" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span></button>
@@ -30,12 +29,16 @@
                               <button type="button" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-share" aria-hidden="true"></span></button>
                               <button type="button" class="btn btn-primary btn-xs">Share This Post</button>
                           </div>
+                          <div class="btn-group">
+                          <%= link_to "Create new post", new_post_path, class: 'btn btn-success btn-xs'%>
+                          </div>
+
                       </div>
                   </div>
               </div>
               <div class="col-sm-4 rc">
-                  <%= image_tag @recent.author.name, class: 'img-circle center-block', id:'poster'%>
-                  <h4 class="text-center"><%= @recent.author.name.upcase %></h4>
+                  <%= image_tag @post.author.name, class: 'img-circle center-block', id:'poster'%>
+                  <h4 class="text-center"><%= @post.author.name.upcase %></h4>
                   <p class="text-center"><small>
           <a href="http://www.twitter.com">twitter</a> |
           <a href="http://www.facebook.com">facebook</a> |

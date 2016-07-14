@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
-  root 'main#index'
+  resources:posts
 
-  get 'blog/:postid' => 'main#blogs', as: :blog
+  root 'posts#index'
+
+  get 'posts/:id' => 'posts#show', as: :blog
   get 'about' => 'about#index', as: :about
   get 'search/(:search)' => 'search#index'
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
